@@ -1,0 +1,73 @@
+﻿@model Pessoa
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <!--head-->
+    <meta name="viewport" content="" width-divvice-width" />
+    <title>Excluir Usuarios</title>
+    <link rel="icon" type="image/x-icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="#" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head><!--fim head-->
+<body>
+    <!--body-->
+    <nav class="navbar navbar-default">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Lista de Usuarios</a>
+            </div>
+            <url class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Voltar para Home","Index")</li>
+            </url>
+        </div>
+    </nav>
+
+    <div style="margin: auto; width: 90%; padding: 10px;">
+        <h4>Você deseja excluir essa pessoa ? </h4>
+        <hr />
+
+        <table class="content-table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cpf)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Endereco)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Cpf)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Endereco)
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir Pessoa" class="btn btn-default" />
+        </div>
+    }
+
+</body><!--fim body-->
+
+</html>

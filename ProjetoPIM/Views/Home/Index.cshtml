@@ -1,27 +1,98 @@
-﻿@{
+﻿@*@{
     ViewData["Title"] = "Home Page";
-}
+    }
 
-<div class="jumbotron">
+    <div class="jumbotron">
     <h1>Trabalho PIM</h1>
-</div>
-<div class="row">
+    </div>
+    <div class="row">
     <div class="col-md-4">
-        <h2>Bem Vindo Ao Trabalho PIM</h2>
-        <p>
-            Contoso University is a sample application that
-            demonstrates how to use Entity Framework Core in an
-            ASP.NET Core MVC web application.
-        </p>
+    <h2>Bem Vindo Ao Trabalho PIM</h2>
+    <p>
+    Contoso University is a sample application that
+    demonstrates how to use Entity Framework Core in an
+    ASP.NET Core MVC web application.
+    </p>
     </div>
     <div class="col-md-4">
-        <h2>Build it from scratch</h2>
-        <p>You can build the application by following the steps in a series of tutorials.</p>
-        <p><a class="btn btn-default" href="https://docs.asp.net/en/latest/data/ef-mvc/intro.html">See the tutorial &raquo;</a></p>
+    <h2>Build it from scratch</h2>
+    <p>You can build the application by following the steps in a series of tutorials.</p>
+    <p><a class="btn btn-default" href="https://docs.asp.net/en/latest/data/ef-mvc/intro.html">See the tutorial &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Download it</h2>
-        <p>You can download the completed project from GitHub.</p>
-        <p><a class="btn btn-default" href="#">See project source code &raquo;</a></p>
+    <h2>Download it</h2>
+    <p>You can download the completed project from GitHub.</p>
+    <p><a class="btn btn-default" href="#">See project source code &raquo;</a></p>
     </div>
-</div>
+    </div>*@
+@model IEnumerable<Pessoa>
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <!--head-->
+    <meta name="viewport" content="" width-divvice-width" />
+    <title>Trabalho de PIM - Acesso ao Banco de dados</title>
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" type="text/css" href="#" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head><!--fim head-->
+<body>
+    <!--body-->
+    <nav class="navbar navbar-default">
+        <!--nav-->
+        <div class="container-fluid">
+            <!--container-fluid-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Lista de Usuarios</a>
+            </div>
+            <url class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("CRIAR USUARIOS","Create")</li>
+            </url>
+        </div>
+    </nav><!--Fim nav-->
+
+    <div style="margin: auto; width: 95%;">
+        <table class="content-table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cpf)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Endereco)
+                </th>
+            </tr>
+            @foreach (var listaPessoa in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modeItem => listaPessoa.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modeItem => listaPessoa.Cpf)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modeItem => listaPessoa.Endereco)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit",new {id = listaPessoa.Id}) |
+                        @Html.ActionLink("Detalhes", "Details",new {id = listaPessoa.Id}) |
+                        @Html.ActionLink("Excluir", "Delete",new {id = listaPessoa.Id})
+                    </td>
+                </tr>
+            }
+            ;
+        </table>
+    </div>
+
+</body><!--fim body-->
+
+</html>

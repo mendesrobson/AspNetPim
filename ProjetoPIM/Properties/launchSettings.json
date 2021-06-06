@@ -13,7 +13,7 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "Default": "Data Source=localhost;Initial Catalog=PIM;User ID=sa;Password=p4ssw0rd!;Integrated Security=True;"
+        "Default": "Data Source=localhost;Initial Catalog=PIM;User ID=sa;Password=p4ssw0rd!;Integrated security=true;"
       }
     },
     "ProjetoPIM": {
