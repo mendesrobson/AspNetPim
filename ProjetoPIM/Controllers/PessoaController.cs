@@ -20,10 +20,28 @@ namespace ProjetoPIM.Controllers
 
         public async Task<IActionResult> Index()
         {
+            var query = (from Pessoa in _context.Pessoas
+                         join endereco in _context.Enderecos on Pessoa.EnderecoId equals endereco.Id
+                         where endereco.Id == Pessoa.EnderecoId
+                         select new PessoaEnderecoViewModel
+                         {
+                             Id = Pessoa.Id,
+                             Cpf = Pessoa.Cpf,
+                             Enderecos = new EnderecoViewModel
+                              {
+                                Logradouro = endereco.Logradouro,
+                                Numero = endereco.Numero,
+                                Cidade = endereco.Cidade
+                              }
+                         });
+            //var result = await query.ToListAsync();
+
+            var testw = await query.ToListAsync();
+
             return View(await _context.Pessoas.ToListAsync());
+            //return View(await _context.Pessoas.ToListAsync());
         }
 
-        // GET: Employee/Create
         public IActionResult AddorEdit(int id = 0)
         {
             if (id == 0)
@@ -32,11 +50,9 @@ namespace ProjetoPIM.Controllers
                 return View(_context.Pessoas.Find(id));
         }
 
-
-        // POST: Employee/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddorEdit([Bind("Id , Nome, Cpf , Endereco")] Pessoa employee)
+        public async Task<IActionResult> AddorEdit([Bind("Id , Nome, Cpf , EnderecoId")] Pessoa employee)
         {
             if (ModelState.IsValid)
             {
@@ -50,7 +66,6 @@ namespace ProjetoPIM.Controllers
             return View(employee);
         }
 
-        // GET: Employee/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             var employee = await _context.Pessoas.FindAsync(id);

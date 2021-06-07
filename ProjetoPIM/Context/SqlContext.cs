@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProjetoPIM.Mappings;
 using ProjetoPIM.Models;
 using System;
 using System.Collections.Generic;
@@ -25,9 +26,10 @@ namespace ProjetoPIM.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<Endereco>().HasKey(_ => _.Id);
             modelBuilder.Entity<Pessoa>().HasKey(_ => _.Id);
-            modelBuilder.Entity<PessoaTelefone>().HasKey(_ => _.IdPessoa);
+            modelBuilder.Entity<PessoaTelefone>().HasKey(_ => _.Id);
             modelBuilder.Entity<Telefone>().HasKey(_ => _.Id);
             modelBuilder.Entity<TipoTelefone>().HasKey(_ => _.Id);
 
@@ -37,7 +39,6 @@ namespace ProjetoPIM.Context
             modelBuilder.Entity<PessoaTelefone>().ToTable("PESSOA_TELEFONE");
             modelBuilder.Entity<Telefone>().ToTable("TELEFONE");
             modelBuilder.Entity<TipoTelefone>().ToTable("TIPO_TELEFONE");
-
         }
     }
 }

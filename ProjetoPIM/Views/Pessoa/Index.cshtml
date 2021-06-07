@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.Cpf)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Endereco)
+                @Html.DisplayNameFor(model => model.EnderecoId)
             </th>
             <th>
                 <a asp-action="AddorEdit" class="btn btn-outline-success"><i class="fa fa-plus-square"></i> Pessoa</a>
@@ -34,11 +34,11 @@
                 @Html.DisplayFor(modelItem => item.Cpf)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
+                @Html.DisplayFor(modelItem => item.EnderecoId)
             </td>
             <td>
                 <a asp-action="AddOrEdit" asp-route-id="@item.Id"><i class="fa fa-marker fa-lg"></i></a>
-                <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt fa-lg"></i></a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Tem certeza que deseja deletar este registro?')"><i class="fa fa-trash-alt fa-lg"></i></a>
             </td>
         </tr>
         }

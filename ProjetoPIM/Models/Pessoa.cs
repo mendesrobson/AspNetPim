@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,7 +9,8 @@ namespace ProjetoPIM.Models
 {
     public class Pessoa
     {
-        [Column("ID")]
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Column("NOME", TypeName = "varchar(100)")]
@@ -17,9 +19,9 @@ namespace ProjetoPIM.Models
         [Column("CPF")]
         public float Cpf { get; set; }
 
-        [Column("ENDERECO")]
-        public int Endereco { get; set; }
+        [ForeignKey("EnderecoId")]
+        public int? EnderecoId { get; set; }
 
-       public virtual ICollection<PessoaTelefone> pessoaTelefones { get; set; } = new List<PessoaTelefone>();
+       //public virtual ICollection<PessoaTelefone> pessoaTelefones { get; set; } = new List<PessoaTelefone>();
     }
 }

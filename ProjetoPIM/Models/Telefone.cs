@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,7 +9,8 @@ namespace ProjetoPIM.Models
 {
     public class Telefone
     {
-        [Column("ID")]
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Column("NUMERO")]
@@ -20,6 +22,6 @@ namespace ProjetoPIM.Models
         [Column("TIPO")]
         public int Tipo { get; set; }
 
-        public virtual ICollection<PessoaTelefone> pessoaTelefones { get; set; }
+       // public virtual ICollection<PessoaTelefone> pessoaTelefones { get; set; } = new List<PessoaTelefone>();
     }
 }

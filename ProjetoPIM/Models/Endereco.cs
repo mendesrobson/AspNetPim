@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,7 +9,8 @@ namespace ProjetoPIM.Models
 {
     public class Endereco
     {
-        [Column("ID")]
+        [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         [Column("LOGRADOURO", TypeName = "varchar(100)")]
@@ -29,6 +31,6 @@ namespace ProjetoPIM.Models
         [Column("ESTADO", TypeName = "varchar(100)")]
         public string Estado { get; set; }
 
-        public virtual ICollection<Pessoa>  Pessoas { get; set; }
+       // public virtual ICollection<Pessoa> Pessoas { get; set; } = new List<Pessoa>();
     }
 }

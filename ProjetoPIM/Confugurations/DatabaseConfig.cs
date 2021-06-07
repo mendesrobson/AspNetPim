@@ -15,8 +15,10 @@ namespace ProjetoPIM.Confugurations
             //services.AddDbContext<SqlContext>(options =>
             //   options.UseSqlServer(Environment.GetEnvironmentVariable("Default")));
 
+            var caminh0 = configuration.GetConnectionString("Default") ?? Environment.GetEnvironmentVariable("Default");
+
             services.AddDbContext<SqlContext>(options =>
-             options.UseSqlServer(configuration.GetConnectionString("Default")));
+             options.UseSqlServer(caminh0));
 
             //Environment.GetEnvironmentVariable("PIM") 
 
