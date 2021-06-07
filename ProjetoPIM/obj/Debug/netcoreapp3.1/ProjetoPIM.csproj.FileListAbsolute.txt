@@ -156,3 +156,6 @@ C:\Users\rnma\Documents\Source\AspNetPim\ProjetoPIM\obj\Debug\netcoreapp3.1\Proj
 C:\Users\rnma\Documents\Source\AspNetPim\ProjetoPIM\obj\Debug\netcoreapp3.1\ProjetoPIM.dll
 C:\Users\rnma\Documents\Source\AspNetPim\ProjetoPIM\obj\Debug\netcoreapp3.1\ProjetoPIM.pdb
 C:\Users\rnma\Documents\Source\AspNetPim\ProjetoPIM\obj\Debug\netcoreapp3.1\ProjetoPIM.genruntimeconfig.cache
+C:\Users\rnma\Documents\Source\AspNetPim\ProjetoPIM\obj\Debug\netcoreapp3.1\Razor\Views\Pessoa\AddorEdit.cshtml.g.cs
+C:\Users\rnma\Documents\Source\AspNetPim\ProjetoPIM\obj\Debug\netcoreapp3.1\Razor\Views\Pessoa\Delete.cshtml.g.cs
+C:\Users\rnma\Documents\Source\AspNetPim\ProjetoPIM\obj\Debug\netcoreapp3.1\Razor\Views\Pessoa\Index.cshtml.g.cs
