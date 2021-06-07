@@ -26,6 +26,6 @@ namespace ProjetoPIM.Domain.Models
         [Column("ESTADO", TypeName = "varchar(100)")]
         public string Estado { get; set; }
 
-        public virtual ICollection<Pessoa>  Pessoas { get; set; }
+       // public virtual ICollection<Pessoa>  Pessoas { get; set; }
     }
 }

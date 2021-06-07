@@ -13,6 +13,8 @@ namespace ProjetoPIM.Data.Mappings
         {
             builder.ToTable("ENDERECO");
 
+            builder.HasKey(_ => _.Id);
+
             builder.Property(p => p.Id)
               .HasColumnType("int")
               .IsRequired();

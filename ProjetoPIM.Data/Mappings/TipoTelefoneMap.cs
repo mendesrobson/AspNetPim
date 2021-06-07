@@ -10,6 +10,8 @@ namespace ProjetoPIM.Data.Mappings
         {
             builder.ToTable("TIPO_TELEFONE");
 
+            builder.HasKey(_ => _.Id);
+
             builder.Property(p => p.Id)
                 .ValueGeneratedNever();
 

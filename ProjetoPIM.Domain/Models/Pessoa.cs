@@ -15,15 +15,13 @@ namespace ProjetoPIM.Domain.Models
         public string Nome { get; set; }
 
         [Column("CPF")]
-        public double Cpf { get; set; }
+        public int Cpf { get; set; }
 
         [Column("ENDERECO")]
         public int Endereco { get; set; }
 
-        public virtual Telefone Telefones { get; set; }
-
         public virtual Endereco Enderecos { get; set; }
 
-        public virtual ICollection<PessoaTelefone> pessoaTelefones { get; set; } 
+      //  public virtual ICollection<PessoaTelefone> pessoaTelefones { get; set; } 
     }
 }

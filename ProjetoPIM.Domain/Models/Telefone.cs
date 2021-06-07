@@ -20,10 +20,10 @@ namespace ProjetoPIM.Domain.Models
         [Column("TIPO")]
         public int Tipo { get; set; }
 
-        public virtual TipoTelefone TipoTelefone { get; set; }
+      //  public virtual TipoTelefone TipoTelefone { get; set; }
 
-        public virtual PessoaTelefone PessoaTelefone {get;set;}
+       // public virtual PessoaTelefone PessoaTelefone {get;set;}
 
-        public virtual ICollection<PessoaTelefone> pessoaTelefones { get; set; }
+       // public virtual ICollection<PessoaTelefone> pessoaTelefones { get; set; }
     }
 }

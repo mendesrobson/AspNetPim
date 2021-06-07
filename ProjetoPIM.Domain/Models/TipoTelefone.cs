@@ -11,6 +11,6 @@ namespace ProjetoPIM.Domain.Models
         [Column("TIPO", TypeName = "varchar(100)")]
         public string Tipo { get; set; }
 
-        public virtual ICollection<Telefone>  Telefones { get; set; }
+        //public virtual ICollection<Telefone>  Telefones { get; set; }
     }
 }

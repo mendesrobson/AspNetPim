@@ -14,8 +14,8 @@ namespace ProjetoPIM.Domain.Models
         [Column("ID_TELEFONE")]
         public int IdTelefone { get; set; }
 
-        public virtual Pessoa Pessoa { get; set; }
+       // public virtual Pessoa Pessoa { get; set; }
 
-        public virtual Telefone Telefone { get; set; }
+       // public virtual Telefone Telefone { get; set; }
     }
 }

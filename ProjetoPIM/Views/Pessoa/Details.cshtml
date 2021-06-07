@@ -1,0 +1,30 @@
+﻿@model ProjetoPIM.Domain.Models.Pessoa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details - EFCore</h2>
+
+<div>
+    <h4>Autor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar a Lista</a>
+</div>

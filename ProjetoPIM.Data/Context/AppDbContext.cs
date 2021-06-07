@@ -19,6 +19,20 @@ namespace ProjetoPIM.Data.Context
             modelBuilder.ApplyConfiguration(new PessoaTelefoneMap());
             modelBuilder.ApplyConfiguration(new TelefoneMap());
             modelBuilder.ApplyConfiguration(new TipoTelefoneMap());
+
+            //modelBuilder.Entity<Endereco>().HasKey(_ => _.Id);
+            //modelBuilder.Entity<Pessoa>().HasKey(_ => _.Id);
+            //modelBuilder.Entity<PessoaTelefone>().HasNoKey();
+            //modelBuilder.Entity<Telefone>().HasKey(_ => _.Id);
+            //modelBuilder.Entity<TipoTelefone>().HasKey(_ => _.Id);
+
+
+            //modelBuilder.Entity<Endereco>().ToTable("ENDERECO");
+            //modelBuilder.Entity<Pessoa>().ToTable("PESSOA");
+            //modelBuilder.Entity<PessoaTelefone>().ToTable("PESSOA_TELEFONE");
+            //modelBuilder.Entity<Telefone>().ToTable("TELEFONE");
+            //modelBuilder.Entity<TipoTelefone>().ToTable("TIPO_TELEFONE");
+
         }
 
         public DbSet<Endereco> Enderecos { get; set; }

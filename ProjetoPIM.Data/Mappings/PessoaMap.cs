@@ -13,6 +13,8 @@ namespace ProjetoPIM.Data.Mappings
         {
             builder.ToTable("PESSOA");
 
+            builder.HasKey(_ => _.Id);
+
             builder.Property(p => p.Id)
                 .ValueGeneratedNever();
 
@@ -33,10 +35,10 @@ namespace ProjetoPIM.Data.Mappings
             //   .HasForeignKey(p => p.Id);
 
             builder.HasData(
-                new Telefone { Id = 1, Ddd = 1, Numero = 1, Tipo = 1 },
-                new Telefone { Id = 2, Ddd = 2, Numero = 2, Tipo = 2 },
-                new Telefone { Id = 3, Ddd = 3, Numero = 3, Tipo = 3 },
-                new Telefone { Id = 4, Ddd = 4, Numero = 4, Tipo = 3 }
+                new Pessoa { Id = 1, Nome = "Eric Evans", Cpf = 1222, Endereco = 1  },
+                new Pessoa { Id = 2, Nome = "Robert C. Martin", Cpf = 2344, Endereco = 2 },
+                new Pessoa { Id = 3, Nome = "Vaughn Vernon", Cpf = 3777, Endereco = 3 },
+                new Pessoa { Id = 4, Nome = "Martin Fowler", Cpf = 43432, Endereco = 3 }
             );
         }
     }

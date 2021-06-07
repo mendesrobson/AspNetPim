@@ -4,6 +4,236 @@
     "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM\\ProjetoPIM.csproj": {}
   },
   "projects": {
+    "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Data\\ProjetoPIM.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Data\\ProjetoPIM.Data.csproj",
+        "projectName": "ProjetoPIM.Data",
+        "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Data\\ProjetoPIM.Data.csproj",
+        "packagesPath": "C:\\Users\\rnma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rnma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus3-cicd-tools.apps.grupofleury.com.br/repository/nuget-hosted": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj": {
+                "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj",
+        "projectName": "ProjetoPIM.Domain",
+        "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj",
+        "packagesPath": "C:\\Users\\rnma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rnma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus3-cicd-tools.apps.grupofleury.com.br/repository/nuget-hosted": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.IoC\\ProjetoPIM.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.IoC\\ProjetoPIM.IoC.csproj",
+        "projectName": "ProjetoPIM.IoC",
+        "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.IoC\\ProjetoPIM.IoC.csproj",
+        "packagesPath": "C:\\Users\\rnma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rnma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus3-cicd-tools.apps.grupofleury.com.br/repository/nuget-hosted": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Data\\ProjetoPIM.Data.csproj": {
+                "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Data\\ProjetoPIM.Data.csproj"
+              },
+              "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj": {
+                "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM\\ProjetoPIM.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +262,17 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Data\\ProjetoPIM.Data.csproj": {
+                "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Data\\ProjetoPIM.Data.csproj"
+              },
+              "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj": {
+                "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.Domain\\ProjetoPIM.Domain.csproj"
+              },
+              "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.IoC\\ProjetoPIM.IoC.csproj": {
+                "projectPath": "C:\\Users\\rnma\\Documents\\Source\\AspNetPim\\ProjetoPIM.IoC\\ProjetoPIM.IoC.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -45,27 +285,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Abstractions": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[5.0.5, )"
-            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.6, )"
             }
           },
           "imports": [

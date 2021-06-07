@@ -13,6 +13,8 @@ namespace ProjetoPIM.Data.Mappings
         {
             builder.ToTable("TELEFONE");
 
+            builder.HasKey(_ => _.Id);
+
             builder.Property(p => p.Id)
                 .ValueGeneratedNever();
 
@@ -32,9 +34,9 @@ namespace ProjetoPIM.Data.Mappings
                 .HasColumnType("int")
                 .IsRequired();
 
-            builder.HasOne(p => p.TipoTelefone)
-               .WithMany(p => p.Telefones)
-               .HasForeignKey(p => p.Id);
+            //builder.HasOne(p => p.TipoTelefone)
+            //   .WithMany(p => p.Telefones)
+            //   .HasForeignKey(p => p.Id);
 
             builder.HasData(
                 new Telefone { Id = 1, Ddd = 1, Numero = 1, Tipo = 1 },

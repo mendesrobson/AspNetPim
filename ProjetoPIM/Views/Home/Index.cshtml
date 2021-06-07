@@ -1,27 +1,20 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>Trabalho PIM</h1>
-</div>
 <div class="row">
-    <div class="col-md-4">
-        <h2>Bem Vindo Ao Trabalho PIM</h2>
-        <p>
-            Contoso University is a sample application that
-            demonstrates how to use Entity Framework Core in an
-            ASP.NET Core MVC web application.
-        </p>
+    <div class="col-md-12">
+        <h2>Entity Framework Core</h2>
+        <a class="btn btn-default" asp-controller="Pessoa" asp-action="Index">Pessoa</a>
+      @*  <a class="btn btn-default" asp-controller="Livro" asp-action="Index">Livros</a>*@
     </div>
-    <div class="col-md-4">
-        <h2>Build it from scratch</h2>
-        <p>You can build the application by following the steps in a series of tutorials.</p>
-        <p><a class="btn btn-default" href="https://docs.asp.net/en/latest/data/ef-mvc/intro.html">See the tutorial &raquo;</a></p>
+@*    <div class="col-md-12">
+        <h2>Dapper</h2>
+        <a class="btn btn-default" asp-controller="AutorDapper" asp-action="Index">Autores</a>
+        <a class="btn btn-default" asp-controller="LivroDapper" asp-action="Index">Livros</a>
     </div>
-    <div class="col-md-4">
-        <h2>Download it</h2>
-        <p>You can download the completed project from GitHub.</p>
-        <p><a class="btn btn-default" href="#">See project source code &raquo;</a></p>
-    </div>
+    <div class="col-md-12">
+        <h2>Híbrido (EF Core + Dapper)</h2>
+        <a class="btn btn-default" asp-controller="AutorHibrido" asp-action="Index">Autores</a>
+        <a class="btn btn-default" asp-controller="LivroHibrido" asp-action="Index">Livros</a>
+    </div>*@
 </div>
