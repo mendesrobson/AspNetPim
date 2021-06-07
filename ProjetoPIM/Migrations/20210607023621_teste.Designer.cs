@@ -10,8 +10,8 @@ using ProjetoPIM.Context;
 namespace ProjetoPIM.Migrations
 {
     [DbContext(typeof(SqlContext))]
-    [Migration("20210606184951_AjustarTipagem")]
-    partial class AjustarTipagem
+    [Migration("20210607023621_teste")]
+    partial class teste
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

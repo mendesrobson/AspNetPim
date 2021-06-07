@@ -37,6 +37,7 @@ namespace ProjetoPIM.Context
             modelBuilder.Entity<PessoaTelefone>().ToTable("PESSOA_TELEFONE");
             modelBuilder.Entity<Telefone>().ToTable("TELEFONE");
             modelBuilder.Entity<TipoTelefone>().ToTable("TIPO_TELEFONE");
+
         }
     }
 }

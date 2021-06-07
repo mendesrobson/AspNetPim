@@ -2,7 +2,7 @@
 
 namespace ProjetoPIM.Migrations
 {
-    public partial class IniCOntextTeste : Migration
+    public partial class teste : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

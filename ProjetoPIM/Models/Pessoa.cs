@@ -15,7 +15,7 @@ namespace ProjetoPIM.Models
         public string Nome { get; set; }
 
         [Column("CPF")]
-        public double Cpf { get; set; }
+        public float Cpf { get; set; }
 
         [Column("ENDERECO")]
         public int Endereco { get; set; }

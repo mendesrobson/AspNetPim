@@ -12,11 +12,14 @@ namespace ProjetoPIM.Confugurations
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
+            //services.AddDbContext<SqlContext>(options =>
+            //   options.UseSqlServer(Environment.GetEnvironmentVariable("Default")));
+
             services.AddDbContext<SqlContext>(options =>
-               options.UseSqlServer(Environment.GetEnvironmentVariable("Default")));
-            
+             options.UseSqlServer(configuration.GetConnectionString("Default")));
+
             //Environment.GetEnvironmentVariable("PIM") 
-            
+
             //configuration.GetConnectionString("Default")
 
 
