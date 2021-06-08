@@ -13,12 +13,11 @@ namespace ProjetoPIM.Models
 
         public float Cpf { get; set; }
 
-        public EnderecoViewModel Enderecos { get; set; }
-    }
+        public int DDD { get; set; }
 
-    public class EnderecoViewModel
-    {
-        public int Id { get; set; }
+        public int NumeroTelefone { get; set; }
+
+        public string TipoTelefone { get; set; }
 
         public string Logradouro { get; set; }
 
@@ -31,5 +30,10 @@ namespace ProjetoPIM.Models
         public string Cidade { get; set; }
 
         public string Estado { get; set; }
+
+        public int EnderecoId { get; set; }
+        public int PessoaTelefoneId { get; set; }
+        public int TelefoneId { get; set; }
+        public int TipoTelefoneId { get; set; }
     }
 }

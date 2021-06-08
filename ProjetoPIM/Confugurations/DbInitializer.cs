@@ -16,10 +16,10 @@ namespace ProjetoPIM.Confugurations
 
             var endereco = new List<Endereco>
             {
-               new Endereco {  Logradouro = "teste1", Numero = 1, Cep = 13333, Cidade = "teste1", Estado = "SP" },
-               new Endereco {  Logradouro = "teste2", Numero = 2, Cep = 2444, Cidade = "teste2", Estado = "RJ" },
-               new Endereco {  Logradouro = "teste3", Numero = 3, Cep = 3234324, Cidade = "teste3", Estado = "MG" },
-               new Endereco {  Logradouro = "teste4", Numero = 4, Cep = 4443243, Cidade = "teste4", Estado = "BA" }
+               new Endereco {  Logradouro = "Av Santos", Numero = 133, Cep = 1333333, Cidade = "SÃO PAULO", Estado = "SP", Bairro = "Jardins" },
+               new Endereco {  Logradouro = "Rua Mogi Mirim", Numero = 200, Cep = 2444333, Cidade = "RIO DE JANEIRO", Estado = "RJ" , Bairro= "Copacabana" },
+               new Endereco {  Logradouro = "Alameda Santos", Numero = 39, Cep = 323432334, Cidade = "MINAS GERAIS", Estado = "MG", Bairro = "TrÊs Corações" },
+               new Endereco {  Logradouro = "Marginal Tiete", Numero = 4000, Cep = 444324333, Cidade = "BAHIA", Estado = "BA" , Bairro = "Salvador" }
             };
 
             foreach (var s in endereco)
@@ -31,10 +31,10 @@ namespace ProjetoPIM.Confugurations
 
             var pessoa = new List<Pessoa>
             {
-                new Pessoa {  Nome = "Eric Evans", Cpf = 1222, EnderecoId = 1  },
-                new Pessoa {  Nome = "Robert C. Martin", Cpf = 2344, EnderecoId = 2 },
-                new Pessoa { Nome = "Vaughn Vernon", Cpf = 3777, EnderecoId = 3 },
-                new Pessoa {  Nome = "Martin Fowler", Cpf = 43432, EnderecoId = 4 }
+                new Pessoa {  Nome = "Eric Evans", Cpf = 1234569, EnderecoId = 1  },
+                new Pessoa {  Nome = "Robert C. Martin", Cpf = 98765, EnderecoId = 2 },
+                new Pessoa { Nome = "Vaughn Vernon", Cpf = 12340, EnderecoId = 3 },
+                new Pessoa {  Nome = "Martin Fowler", Cpf = 908755, EnderecoId = 4 }
             };
 
 
@@ -62,10 +62,10 @@ namespace ProjetoPIM.Confugurations
 
             var telefone = new List<Telefone>
             {
-                new Telefone {  Ddd = 1, Numero = 1, Tipo = 1 },
-                new Telefone {  Ddd = 2 , Numero = 2, Tipo = 2 },
-                new Telefone {  Ddd = 3 , Numero = 3, Tipo = 3 },
-                new Telefone {  Ddd = 4 , Numero = 4, Tipo = 3 }
+                new Telefone {  Ddd = 66, Numero = 133432432, Tipo = 1 },
+                new Telefone {  Ddd = 13 , Numero = 243432432, Tipo = 2 },
+                new Telefone {  Ddd = 99 , Numero = 34324322, Tipo = 3 },
+                new Telefone {  Ddd = 33, Numero = 432432432, Tipo = 3 }
             };
 
             foreach (var s in telefone)
@@ -77,14 +77,14 @@ namespace ProjetoPIM.Confugurations
 
             var tipo = new List<TipoTelefone>
             {
-                 new TipoTelefone {  Tipo = "Celular" },
+                new TipoTelefone {  Tipo = "Celular" },
                 new TipoTelefone {  Tipo = "Telefone Fixo" },
                 new TipoTelefone {  Tipo = "Telefone Fax" },
                 new TipoTelefone {  Tipo = "Telefone Residencial" }
             };
 
 
-            foreach(var s in tipo)
+            foreach (var s in tipo)
             {
                 context.TipoTelefones.Add(s);
             }

@@ -1,10 +1,10 @@
-﻿@model IEnumerable<Pessoa>
+﻿@model IEnumerable<PessoaEnderecoViewModel>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h4>Resgistrar Pessoa</h4>
+<h4>Registrar Pessoa</h4>
 
 <table class="highlight">
     <thead>
@@ -16,7 +16,31 @@
                 @Html.DisplayNameFor(model => model.Cpf)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.EnderecoId)
+                @Html.DisplayNameFor(model => model.DDD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroTelefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoTelefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Logradouro)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Numero)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Cep)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Bairro)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Estado)
             </th>
             <th>
                 <a asp-action="AddorEdit" class="btn btn-outline-success"><i class="fa fa-plus-square"></i> Pessoa</a>
@@ -33,8 +57,32 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Cpf)
             </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.DDD)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.NumeroTelefone)
+            </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EnderecoId)
+                @Html.DisplayFor(modelItem => item.TipoTelefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Logradouro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Cep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bairro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
             </td>
             <td>
                 <a asp-action="AddOrEdit" asp-route-id="@item.Id"><i class="fa fa-marker fa-lg"></i></a>
